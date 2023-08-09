@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en"></html>
+<head>
+    <link href="styles.css" type="text/css" rel="stylesheet">
+</head>
+<body>
+    <h1>CSS Display and Positioning Cheatsheet</h1>
+    <h2>CSS z-index Property</h2>
+    <ul>
+        <li><strong>Description:</strong> Specifies how far back or forward an element appears. Useful for creating layered effects, such as modals or pop-ups</li>
+        <li><strong>Example:</strong></li>
+    </ul>
+    <pre>
+.element1 {
+    position: absolute;
+    z-index: 1;
+}
+
+.element2 {
+    position: absolute;
+    z-index: -1;
+  }
+</pre>
+<!-- Fixed CSS Positioning -->
+<h2>Fixed CSS Positioning</h2>
+<ul>
+    <li><strong>Description:</strong> Pins elements to a specific spot. Commonly used for navigation bars.</li>
+    <li><strong>Example:</strong></li>
+</ul>
+<pre>
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+</pre>
+
+<!-- CSS Display Property -->
+<h2>CSS Display Property</h2>
+<ul>
+    <li><strong>Description:</strong> Determines how an element is rendered.</li>
+    <li><strong>Examples:</strong></li>
+</ul>
+<pre>
+.container1 {
+     display: block; 
+} /* Full width */
+
+.container2 {
+    display: inline; 
+} /* Inline with content */
+
+.container3 {
+    display: inline-block; 
+} /* Inline with dimensions */
+</pre>
+
+<!-- CSS Position: Absolute -->
+<h2>CSS Position: Absolute</h2>
+<ul>
+    <li><strong>Description:</strong> Positions an element relative to its nearest positioned ancestor.</li>
+    <li><strong>Example:</strong></li>
+</ul>
+<pre>
+.element {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+</pre>
+
+<!-- CSS Position: Relative -->
+<h2>CSS Position: Relative</h2>
+<ul>
+    <li><strong>Description:</strong> Positions an element relative to its normal position.</li>
+    <li><strong>Example:</strong></li>
+</ul>
+<pre>
+.element {
+  position: relative;
+  top: -10px; /* Moves 10px up */
+}
+</pre>
+
+<!-- CSS Position: Static -->
+<h2>CSS Position: Static</h2>
+<ul>
+    <li><strong>Description:</strong> Default positioning according to the document's flow.</li>
+    <li><strong>Example:</strong></li>
+</ul>
+<pre>
+.element {
+  position: static; 
+} /* Default */
+</pre>
+
+<!-- CSS Float Property -->
+<h2>CSS Float Property</h2>
+<ul>
+    <li><strong>Description:</strong> Floats elements left or right.</li>
+    <li><strong>Examples:</strong></li>
+</ul>
+<pre>
+.left {
+    float: left;
+    width: 50%;
+}
+.right {
+    float: right;
+    width: 50%;
+}
+</pre>
+
+<!-- CSS Clear Property -->
+<h2>CSS Clear Property</h2>
+<ul>
+    <li><strong>Description:</strong> Controls the flow of floated elements.</li>
+    <li><strong>Examples:</strong></li>
+</ul>
+<pre>
+.element {
+    clear: left;
+} /* Clears left floats */
+
+.element {
+    clear: right;
+} /* Clears right floats */
+
+.element {
+    clear: both;
+} /* Clears both sides */
+</pre>
+
+<!-- CSS Flexbox and Grid Layout -->
+<h2>Flexbox and Grid Layout</h2>
+<ul>
+    <li><strong>Description:</strong> Flexbox for one-dimensional layouts; Grid for two-dimensional.</li>
+    <li><strong>Flexbox Example:</strong></li>
+</ul>
+<pre>
+.container {
+    display: flex;
+    justify-content:
+    space-between;
+}
+</pre>
+<ul>
+    <li><strong>Grid Example:</strong></li>
+</ul>
+<pre>
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+</pre>
+
+<!-- Use of `!important` with Positioning -->
+<h2>Use of `!important` with Positioning</h2>
+<ul>
+    <li><strong>Description:</strong> Overrides conflicting declarations.</li>
+    <li><strong>Example:</strong></li>
+</ul>
+<pre>
+.element {
+    position: absolute !important;
+}
+</pre>
+
+<!-- Browser Compatibility Notes -->
+<h2>Browser Compatibility</h2>
+<p>Always refer to platforms like <a href="https://caniuse.com/">Can I use</a> to ensure browser compatibility for CSS properties.</p>
+
+<!-- Links to Official Documentation -->
+<h2>Links to Official Documentation</h2>
+<ul>
+    <li><a href="https://developer.mozilla.org/">MDN Web Docs</a> for in-depth details.</li>
+</ul>
+
+</body>
+</html>
